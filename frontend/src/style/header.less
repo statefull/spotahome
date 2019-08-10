@@ -1,0 +1,48 @@
+.header {
+  padding: 10px 50px 10px 50px;
+  width: 100%;
+  background-color: lighten(@orange, 20%);
+  border-bottom: 1px solid @black;
+
+  &__logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: @white;
+  }
+
+  &__links {
+    text-align: right;
+    &__list {
+      list-style-type: none;
+
+      a {
+        display: inline-block;
+        color: @black;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: underline;
+
+        &:hover {
+          cursor: pointer;
+          color: @white;
+        }
+      }
+
+      a + a {
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+}
+
+.header_mobile {
+  padding: 10px 50px 10px 50px;
+  background-color: lighten(@orange, 20%);
+  border-bottom: 1px solid @black;
+
+  &__logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: @white;
+  }
+}

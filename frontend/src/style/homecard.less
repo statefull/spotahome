@@ -1,0 +1,135 @@
+.homecard {
+  width: 100%;
+  padding: 15px;
+  background-color: lighten(@yellow, 40%);
+
+  & + & {
+    margin-top: 20px;
+  }
+
+  &__image {
+    display: inline-block;
+    width: 200px;
+    vertical-align: middle;
+    img {
+      width: 200px;
+    }
+  }
+
+  &__description {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 300px);
+    &__information {
+      &__title {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 43px;
+      }
+
+      &__price {
+        position: absolute;
+        right: 0;
+        top: 0;
+        &--yellow {
+          background-color: @black;
+          border-radius: 5px;
+          color: @yellow;
+          font-size: 20px;
+          font-weight: bold;
+          padding: 10px;
+        }
+      }
+    }
+
+    &__actions {
+      margin: 20px 0 0 0;
+      text-align: end;
+
+      button + button {
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+}
+
+.button {
+  width: 150px;
+  color: @white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+
+  &--primary {
+    background-color: @light-green;
+    border-bottom: 10px solid @dark-green;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &--secondary {
+    background-color: @orange;
+    border-bottom: 10px solid darken(@orange, 10%);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.homecard_mobile {
+  padding: 15px;
+  background-color: lighten(@yellow, 40%);
+
+  & + & {
+    margin-top: 20px;
+  }
+
+  &__image {
+    width: 200px;
+    img {
+      width: 200px;
+    }
+  }
+
+  &__description {
+    &__information {
+      &__title {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      &__price {
+        display: flex;
+        justify-content: flex-end;
+        &--yellow {
+          background-color: @black;
+          border-radius: 5px;
+          color: @yellow;
+          font-size: 20px;
+          font-weight: bold;
+          padding: 10px;
+        }
+      }
+    }
+
+    &__actions {
+      margin: 20px 0 0 0;
+      button {
+        width: 100%;
+      }
+
+      button + button {
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+}

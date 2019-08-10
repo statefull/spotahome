@@ -1,0 +1,10 @@
+{
+  "app": {
+    "listeningPort": "8080",
+    "numberOfHomecards": 30,
+    "spotahomeEndpoints": {
+      "homecardsByRelevance": "https://frontend-interview.spotahome.com/api/public/listings/search/markers/madrid",
+      "homecardsInformation": "https://frontend-interview.spotahome.com/api/public/listings/search/homecards_ids"
+    }
+  }
+}
